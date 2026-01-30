@@ -2,7 +2,7 @@
   "name": "hono",
   "type": "module",
   "scripts": {
-    "build": "bun build src/index.ts --outdir=dist --target=bun --external=hono",
+    "build": "bun build.ts",
     "vercel-build": "bun run build"
   },
   "dependencies": {
