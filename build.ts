@@ -1,7 +1,10 @@
-await Bun.build({
-  entrypoints: ["src/index.ts"],
+import * as esbuild from "esbuild";
+
+await esbuild.build({
+  entryPoints: ["src/index.ts"],
   outdir: "dist",
-  target: "node",
+  platform: "node",
   format: "esm",
+  bundle: true,
   external: ["hono"],
 });
