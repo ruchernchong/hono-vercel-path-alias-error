@@ -1,6 +1,10 @@
 {
   "name": "hono",
   "type": "module",
+  "scripts": {
+    "build": "bun build src/index.ts --outdir=dist --target=bun --external=hono",
+    "vercel-build": "bun run build"
+  },
   "dependencies": {
     "hono": "^4.9.10"
   },
