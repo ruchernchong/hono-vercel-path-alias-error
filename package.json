@@ -1,7 +1,13 @@
 {
   "name": "hono",
   "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
   "dependencies": {
+    "@hono/node-server": "^1.19.14",
     "hono": "^4.9.10"
   },
   "devDependencies": {
